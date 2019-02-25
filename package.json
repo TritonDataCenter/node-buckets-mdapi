@@ -1,13 +1,13 @@
 {
-    "name": "moray",
-    "description": "Moray client library",
+    "name": "boray",
+    "description": "Buckets moray client library",
     "version": "3.6.0",
     "author": "Joyent (joyent.com)",
     "keywords": [ "moray" ],
     "main": "./lib/index.js",
     "repository": {
         "type": "git",
-        "url": "git+ssh://git@github.com:joyent/node-moray.git"
+        "url": "git+ssh://git@github.com:joyent/node-boray.git"
     },
     "dependencies": {
         "artedi": "2.0.0",
