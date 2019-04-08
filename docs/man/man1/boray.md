@@ -2,7 +2,7 @@
 
 ## NAME
 
-moray - command-line tools for Moray
+boray - command-line tools for Boray
 
 ## DESCRIPTION
 
@@ -30,16 +30,11 @@ Working with objects:
 * `getobject`: fetch the contents of an object by primary key
 * `delobject`: delete an object by primary key
 * `findobjects`: fetch the contents of multiple objects using a filter
-* `delmany`: delete multiple objects using a filter
-* `updatemany`: update multiple objects using a filter
-* `reindexobjects`: populate a newly-added index
 
 Working with remote servers:
 
 * `morayping`: check whether Moray is online
 * `morayversion`: check the version of a Moray server
-* `sql`: execute a SQL string on a Moray server
-* `gettokens`: fetch the list of shards from electric-moray
 
 The tools in this package support two modes for locating the remote Moray server
 on which to operate:
@@ -264,7 +259,7 @@ Finally, remove the bucket:
 
 ## SEE ALSO
 
-`moray(3)`, `delbucket(1)`, `delmany(1)`, `delobject(1)`, `findobjects(1)`,
+`boray(3)`, `delbucket(1)`, `delmany(1)`, `delobject(1)`, `findobjects(1)`,
 `getbucket(1)`, `getobject(1)`, `gettokens(1)`, `listbuckets(1)`,
 `morayping(1)`, `morayversion(1)`, `putbucket(1)`, `putobject(1)`,
 `reindexobjects(1)`, `sql(1)`, `updatemany(1)`,

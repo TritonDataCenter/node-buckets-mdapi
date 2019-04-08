@@ -1,8 +1,8 @@
-# moray 3 "May 2018" Moray "Moray Client Library"
+# boray 3 "April 2019" Boray "Boray Client Library"
 
 ## NAME
 
-moray - Node.js client library for Moray
+boray - Node.js client library for Boray
 
 ## DESCRIPTION
 

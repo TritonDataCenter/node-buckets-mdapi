@@ -5,10 +5,10 @@
 -->
 
 <!--
-    Copyright (c) 2016, Joyent, Inc.
+    Copyright (c) 2019, Joyent, Inc.
 -->
 
-# node-moray
+# node-boray
 
 This repository is part of the Joyent Triton and Joyent Manta projects. See the
 [Triton](https://github.com/joyent/triton/blob/master/CONTRIBUTING.md) and
@@ -20,24 +20,19 @@ contributing guidelines and general documentation at the main
 
 # Overview
 
-This is the Node.js client SDK for [Moray](https://github.com/joyent/moray).
+This is the Node.js client SDK for [Boray](https://github.com/joyent/boray).
 You can install it with:
 
-    npm install moray
+    npm install boray
 
 or, to put the manual pages and CLI tools on your path:
 
-    npm install -g moray
+    npm install -g boray
 
 For usage information, see:
 
-* [moray(1)](./docs/man/man1/moray.md) (overview manual page for CLI tools)
-* [moray(3)](./docs/man/man3/moray.md) (overview manual page for library
+* [boray(1)](./docs/man/man1/boray.md) (overview manual page for CLI tools)
+* [boray(3)](./docs/man/man3/boray.md) (overview manual page for library
   interface)
-* [Moray server](https://github.com/joyent/moray) overview and reference
+* [Boray server](https://github.com/joyent/boray) overview and reference
   documentation
-
-# Testing
-
-To test the Moray client, see the separate
-[moray-test-suite](https://github.com/joyent/moray-test-suite) repository.

@@ -1,9 +1,12 @@
 {
     "name": "boray",
-    "description": "Buckets moray client library",
-    "version": "3.6.0",
+    "description": "Boray (Buckets moray) client library",
+    "version": "0.1.0",
     "author": "Joyent (joyent.com)",
-    "keywords": [ "moray" ],
+    "keywords": [
+        "moray",
+        "boray"
+    ],
     "main": "./lib/index.js",
     "repository": {
         "type": "git",
