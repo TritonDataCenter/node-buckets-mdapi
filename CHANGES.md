@@ -1,6 +1,7 @@
-# Changelog
+# node-buckets-mdapi changelog
 
-## v0.1.0 Forked from [node-moray](https://github.com/joyent/node-moray). Please
-  see the `node-moray` [CHANGES
-  file](https://github.com/joyent/node-moray/CHANGES.md) for the history of
-  `node-moray` changes prior to this fork.
+## 0.1.0
+
+Forked from [node-moray](https://github.com/joyent/node-moray). Please see the
+`node-moray` [CHANGES file](https://github.com/joyent/node-moray/CHANGES.md) for
+the history of `node-moray` changes prior to this fork.
