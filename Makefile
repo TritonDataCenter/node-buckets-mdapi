@@ -49,7 +49,6 @@ MAN_OUTROOT	= ./man
 include ./tools/mk/Makefile.manpages.defs
 
 include ./tools/mk/Makefile.defs
-include ./tools/mk/Makefile.smf.defs
 
 #
 # Repo-specific targets
@@ -57,6 +56,15 @@ include ./tools/mk/Makefile.smf.defs
 .PHONY: all
 all: $(REPO_DEPS)
 	$(NPM) rebuild
+
+# "Cutting a release" is just tagging the current commit with
+# "v(package.json version)".
+.PHONY: cutarelease
+cutarelease:
+	which json 2>/dev/null 1>/dev/null  # Ensure have the 'json' tool.
+	ver=$(shell json -f package.json version) && \
+	    git tag "v$$ver" && \
+	    git push origin "v$$ver"
 
 #
 # Manual pages are checked into this repository.  See Makefile.manpages.defs for
