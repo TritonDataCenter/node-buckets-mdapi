@@ -8,7 +8,7 @@
     Copyright 2019 Joyent, Inc.
 -->
 
-# node-boray
+# node-buckets-mdapi
 
 This repository is part of the Joyent Manta project.  For contribution
 guidelines, issues, and general documentation, visit the main
@@ -17,19 +17,11 @@ guidelines, issues, and general documentation, visit the main
 
 # Overview
 
-This is the Node.js client SDK for [Boray](https://github.com/joyent/boray).
+This is the Node.js client SDK for Manta's buckets metadata API([manta-buckets-mdapi](https://github.com/joyent/manta-buckets-mdapi)).
 You can install it with:
 
-    npm install boray
+    npm install buckets-mdapi
 
 or, to put the manual pages and CLI tools on your path:
 
-    npm install -g boray
-
-For usage information, see:
-
-* [boray(1)](./docs/man/man1/boray.md) (overview manual page for CLI tools)
-* [boray(3)](./docs/man/man3/boray.md) (overview manual page for library
-  interface)
-* [Boray server](https://github.com/joyent/boray) overview and reference
-  documentation
+    npm install -g buckets-mdapi
