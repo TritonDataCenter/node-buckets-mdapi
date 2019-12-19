@@ -45,7 +45,7 @@ include ./tools/mk/Makefile.defs
 #
 .PHONY: all
 all: $(REPO_DEPS)
-	$(NPM) rebuild
+	$(NPM) install 
 
 # "Cutting a release" is just tagging the current commit with
 # "v(package.json version)".
