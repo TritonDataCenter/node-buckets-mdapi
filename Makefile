@@ -5,7 +5,7 @@
 #
 
 #
-# Copyright (c) 2016, Joyent, Inc.
+# Copyright 2019 Joyent, Inc.
 #
 
 #
@@ -38,16 +38,6 @@ JSL_FILES_NODE   = $(JS_FILES)
 JSSTYLE_FILES	 = $(JS_FILES)
 JSSTYLE_FLAGS    = -f tools/jsstyle.conf
 
-MAN_SECTION	= 1
-MAN_INROOT	= ./docs/man
-MAN_OUTROOT	= ./man
-include ./tools/mk/Makefile.manpages.defs
-
-MAN_SECTION	= 3
-MAN_INROOT	= ./docs/man
-MAN_OUTROOT	= ./man
-include ./tools/mk/Makefile.manpages.defs
-
 include ./tools/mk/Makefile.defs
 
 #
@@ -55,7 +45,7 @@ include ./tools/mk/Makefile.defs
 #
 .PHONY: all
 all: $(REPO_DEPS)
-	$(NPM) rebuild
+	$(NPM) install 
 
 # "Cutting a release" is just tagging the current commit with
 # "v(package.json version)".
@@ -66,17 +56,6 @@ cutarelease:
 	    git tag "v$$ver" && \
 	    git push origin "v$$ver"
 
-#
-# Manual pages are checked into this repository.  See Makefile.manpages.defs for
-# details.
-#
-.PHONY: manpages
-manpages: $(MAN_OUTPUTS)
-
 include ./tools/mk/Makefile.deps
 include ./tools/mk/Makefile.targ
 
-MAN_SECTION	= 1
-include ./tools/mk/Makefile.manpages.targ
-MAN_SECTION	= 3
-include ./tools/mk/Makefile.manpages.targ
