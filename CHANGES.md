@@ -1,5 +1,9 @@
 # node-buckets-mdapi changelog
 
+## 0.6.0
+
+Add support for garbage collection
+
 ## 0.4.0
 
 Complete renaming work from boray to buckets-mdapi
