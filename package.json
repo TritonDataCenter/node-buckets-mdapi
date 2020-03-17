@@ -1,7 +1,7 @@
 {
     "name": "buckets-mdapi",
     "description": "Manta buckets metadata API client library",
-    "version": "0.6.0",
+    "version": "0.7.0",
     "author": "Joyent (joyent.com)",
     "keywords": [
         "manta",
