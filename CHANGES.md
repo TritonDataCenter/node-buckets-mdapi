@@ -1,5 +1,9 @@
 # node-buckets-mdapi changelog
 
+## 0.7.0
+
+Add support for conditional requests
+
 ## 0.6.0
 
 Add support for garbage collection
